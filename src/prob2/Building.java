@@ -7,7 +7,6 @@ public class Building {
 	private double maintenance;
 	
 	protected Building(List<Apartment> apts, double maintenance) {
-		super();
 		this.apts = apts;
 		this.maintenance = maintenance;
 	}

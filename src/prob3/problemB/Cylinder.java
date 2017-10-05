@@ -2,11 +2,12 @@ package prob3.problemB;
 
 public class Cylinder {
 	private double height = 1.0;
-	private double radius = 1.0;
+	//private double radius = 1.0;
+	
 	private Circle circle;
 	
 	public Cylinder() {
-		circle = new Circle(this.radius);
+		circle = new Circle();
 	}
 
 	protected Cylinder(double radius) {
