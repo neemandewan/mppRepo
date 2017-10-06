@@ -2,60 +2,27 @@ package assignment04.probC;
 
 public final class Paycheck {
 	private float grossPay;
-	private float fica;
-	private float state;
-	private float local;
-	private float medicare;
-	private float socialSecurity;
-	
-	public Paycheck() {
-		// TODO Auto-generated constructor stub
-		this.fica = 23;
-		this.state = 5;
-		this.local = 1;
-		this.medicare = 3;
-		this.socialSecurity = 7.5f;
-	}
+	private final float FICA = 0.23f;
+	private final float STATE = 0.05f;
+	private final float LOCAL = 0.01f;
+	private final float MEDICARE = 0.03f;
+	private final float SOCIALSECURITY = 0.075f;
 
+	protected Paycheck(float grossPay) {
+		super();
+		this.grossPay = grossPay;
+	}
+	
 	public float getGrossPay() {
 		return grossPay;
 	}
 
-
-
-	public float getFica() {
-		return fica;
-	}
-
-
-
-	public float getState() {
-		return state;
-	}
-
-
-
-	public float getLocal() {
-		return local;
-	}
-
-
-
-	public float getMedicare() {
-		return medicare;
-	}
-
-
-
-	public float getSocialSecurity() {
-		return socialSecurity;
-	}
-
 	public void print() {
-		
+		System.out.println("Paycheck [getGrossPay()="+ getGrossPay() +", getNetPay()=" + getNetPay() + "]");
 	}
 	
-	public void getNetPay() {
-		
+	public float getNetPay() {
+		return grossPay-(FICA*grossPay + STATE*grossPay + LOCAL*grossPay + MEDICARE*grossPay + SOCIALSECURITY*grossPay);
 	}
+
 }

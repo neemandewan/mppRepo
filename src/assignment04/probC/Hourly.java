@@ -3,6 +3,7 @@ package assignment04.probC;
 public class Hourly extends Employee {
 	private float hourlyWage;
 	private float hoursPerWeek;
+	private final int WEEKS_IN_A_MONTH = 4;
 
 	public Hourly(Integer empId, float hourlyWage, float hoursPerWeek) {
 		super(empId);
@@ -19,9 +20,9 @@ public class Hourly extends Employee {
 	}
 
 	@Override
-	public double calcGrossPay() {
+	public float calcGrossPay(int month, int year) {
 		// TODO Auto-generated method stub
-		return 0;
+		return hourlyWage*hoursPerWeek*WEEKS_IN_A_MONTH;
 	}
 	
 	
