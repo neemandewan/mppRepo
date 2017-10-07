@@ -7,7 +7,7 @@ public class CannotFly implements FlyBehavior {
 		// TODO Auto-generated method stub
 		return "cannot fly";
 	}
-
+	
 	@Override
 	public String toString() {
 		return fly();

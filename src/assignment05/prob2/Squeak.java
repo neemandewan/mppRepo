@@ -3,9 +3,14 @@ package assignment05.prob2;
 public class Squeak implements QuackBehavior {
 
 	@Override
-	public void quack() {
+	public String quack() {
 		// TODO Auto-generated method stub
-		System.out.println("Quack by squeaking");
+		return "squeaking";
 	}
-
+	
+	
+	@Override
+	public String toString() {
+		return quack();
+	}
 }

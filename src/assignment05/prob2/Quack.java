@@ -3,9 +3,13 @@ package assignment05.prob2;
 public class Quack implements QuackBehavior {
 
 	@Override
-	public void quack() {
+	public String quack() {
 		// TODO Auto-generated method stub
-		System.out.println("Quacking");
+		return "quacking";
 	}
-
+	
+	@Override
+	public String toString() {
+		return quack();
+	}
 }

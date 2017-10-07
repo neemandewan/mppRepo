@@ -2,6 +2,9 @@ package assignment05.prob2;
 
 public abstract class Duck {
 	
+	private FlyBehavior flyBehavior;
+	private QuackBehavior quackBehavior;
+	
 	public void swim() {
 		System.out.println("swimming");
 	}
@@ -10,7 +13,12 @@ public abstract class Duck {
 		System.out.println("display");
 	}
 
-	public abstract FlyBehavior getFlyBehavior();
+	public void fly() {
+		flyBehavior.fly();
+	}
 
-	public abstract QuackBehavior getQuackBehavior();
+	public void quack() {
+		quackBehavior.quack();
+	}
+
 }

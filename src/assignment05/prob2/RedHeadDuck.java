@@ -4,19 +4,16 @@ public class RedHeadDuck extends Duck {
 	
 	@Override
 	public void display() {
-		System.out.println("display");
+		System.out.println("displaying");
 	}
-
+	
 	@Override
-	public FlyBehavior getFlyBehavior() {
-		// TODO Auto-generated method stub
-		FlyBehavior fb = (FlyBehavior) new FlywithWings();
-		return fb;
+	public void fly() {
+		System.out.println(new FlyWithWings());
 	}
-
+	
 	@Override
-	public QuackBehavior getQuackBehavior() {
-		// TODO Auto-generated method stub
-		return null;
+	public void quack() {
+		System.out.println(new Quack());
 	}
 }

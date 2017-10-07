@@ -1,11 +1,15 @@
 package assignment05.prob2;
 
 public class MuteQuack implements QuackBehavior {
-
+	
 	@Override
-	public void quack() {
+	public String quack() {
 		// TODO Auto-generated method stub
-		System.out.println("Cannot Quack");
+		return "cannot quack";
 	}
-
+	
+	@Override
+	public String toString() {
+		return quack();
+	}
 }

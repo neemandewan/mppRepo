@@ -1,17 +1,18 @@
 package assignment05.prob2;
 
 public class DecoyDuck extends Duck {
-
 	@Override
-	public FlyBehavior getFlyBehavior() {
-		// TODO Auto-generated method stub
-		return null;
+	public void display() {
+		System.out.println("displaying");
 	}
-
+	
 	@Override
-	public QuackBehavior getQuackBehavior() {
-		// TODO Auto-generated method stub
-		return null;
+	public void fly() {
+		System.out.println(new CannotFly());
 	}
-
+	
+	@Override
+	public void quack() {
+		System.out.println(new MuteQuack());
+	}
 }
