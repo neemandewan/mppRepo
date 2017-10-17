@@ -1,0 +1,2 @@
+The equals method in Employee is declared as explicit parameter type as Employee. 
+Hence, it is not overridden and it generated wrong output. We must override equals method of type Object.

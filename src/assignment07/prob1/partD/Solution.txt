@@ -1,0 +1,3 @@
+In Employee Class, the HashMap is used to keep track of duplicate records as well as equals method and hashCode mode are implemented properly. 
+The main problem lies in the value of Hash that is modified when its updating. It is creating confusion and producing incorrect results.
+The hash key must be immutable.

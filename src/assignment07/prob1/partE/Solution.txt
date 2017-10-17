@@ -1,0 +1,8 @@
+a. If D is a class, that means B or C, one of them is class, the other must be interface. Both B and C has method(), how Java solve the conflict? 
+Answer: Super class has the priority over interface.
+
+b. If D is a class, B and C can both be interface, how Java solve the conflict? 
+Answer: Only one method is overridden. We can implement any one of C.super.method() or B.super.method() to get desired output.
+
+c. If D is an interface, B and C can must be interface. Because interface cannot extends/implements class. Both B and C has method(). How Java solve the conflict if you think it has conflict? 
+Answer: D can extend more than one interface but will a single overridden method i.e it can implement any one of C.super.method() or B.super.method() to get desired output.

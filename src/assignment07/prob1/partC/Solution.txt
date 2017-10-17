@@ -1,0 +1,1 @@
+The hashCode method has not been overridden in Employee class.

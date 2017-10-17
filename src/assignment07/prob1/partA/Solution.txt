@@ -1,0 +1,2 @@
+ArrayList implements 6 interfaces:
+Serializable, Colenable, Iterable, Collection<E>,List<E>, RandomAccess
