@@ -1,0 +1,5 @@
+1) Functional interface: is Runnable interface like Callable, Comparator interface and a whole host of other interface defined by Java. 
+2) Functor: it is require to name your functional interface, and java always require such objects, this is called functor.
+3) Closuer: the major buzz of Java is Lambdas and it is called closures,  its function which refers to free variables 
+that used locally . The variables that are not assigned to are closed over the surrounding state in order to bind them to a value.
+A closure is a functor embedded inside another class, that is capable of remembering the state of its enclosing object.

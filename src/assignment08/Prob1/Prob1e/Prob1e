@@ -1,0 +1,7 @@
+i.	f(x) = x + 2x2	
+Sol: (x) -> x + 2 * x ^2 
+ii.	g(x,y) = y – x + xy 
+Sol: (x,y) -> y – x + x ^y
+iii.	h(x,y,z) = z – (x + y)
+Sol: (x,y,z) -> z – (x +y)
+

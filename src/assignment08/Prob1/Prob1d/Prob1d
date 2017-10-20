@@ -1,0 +1,7 @@
+1. It reduce creating different classes, you can embed this within your code
+2. Reduce the writing long code, generate your results and then use it with different occasion.
+3. More succinct and clear than anonymous inner classes. More concise coding. it is very easy for compiler to compile the program.
+The other major benefit is concurrency
+
+ 
+

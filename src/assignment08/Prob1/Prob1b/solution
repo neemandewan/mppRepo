@@ -1,0 +1,11 @@
+Declarative programming is old fashion task, where you write big block of code to accomplish the task
+such as to calculate the total count of certain variable in List you run the for loop such as, Also in 
+declarative programming the side-effects are that it modify the parameter values in some situation.
+
+List<Student> lists=....
+For(Student std: students)
+    count +=std.grade;
+
+Functional programming is that you want to achieve the result without modifying the existing value of certain parameter,
+this is the beauty of function programming where the data comes as value and then perform some task and return the 
+value back to caller. Such as Math.pow(x,y), this is power function take two arguments, and return the value of x power y, without modifying any values.

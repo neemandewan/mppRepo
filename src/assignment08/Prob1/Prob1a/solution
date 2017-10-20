@@ -1,0 +1,8 @@
+1) Functional programming does not cause any “side-effect” on parameter passed, 
+which mean it perform some services/task and return back the result to caller.
+2)Another thing related to function programing is it has only output dependency as argument, 
+and this needs to be determined before out is generated. 
+
+3) Whereas in imperative we perform day to day duty, perform some calculation on certain variables, change it state and then produce the results. 
+The example is looping statements, if-then-else clauses etc.
+
