@@ -1,4 +1,4 @@
-package assignment09.Prob9;
+package assignment09.prob9;
 
 import java.util.List;
 

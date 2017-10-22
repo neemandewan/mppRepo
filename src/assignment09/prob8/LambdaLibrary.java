@@ -1,4 +1,4 @@
-package assignment09.Prob8;
+package assignment09.prob8;
 
 import java.util.List;
 import java.util.stream.Collectors;

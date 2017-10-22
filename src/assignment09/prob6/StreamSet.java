@@ -1,4 +1,4 @@
-package assignment09.Prob6;
+package assignment09.prob6;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,8 +1,13 @@
-package assignment09.Prob7b;
+package assignment09.prob7a;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
+
+    static boolean getCheck(Employee e) {
+        return (e.getSalary() > 100000) && (e.lastName.charAt(0) > 'M');
+    }
 
     public static void main(String[] args) {
         List<Employee> list = Arrays.asList(new Employee("Joe", "Davis", 120000),
@@ -14,7 +19,17 @@ public class Main {
                 new Employee("Thomas", "Blake", 111000),
                 new Employee("Alice", "Richards", 101000),
                 new Employee("Donald", "Trump", 100000));
-        System.out.println(LambdaLibrary.objTriFunction.apply(list, 100000, 'M'));
+
+        //your stream pipeline here
+        List<String> listnew = list
+                .parallelStream()
+                .filter(Main::getCheck)
+                .map(Employee::fullName)
+                .sorted()
+                .collect(Collectors.toList());
+
+        System.out.println(listnew);
+
     }
 
 }

@@ -1,11 +1,9 @@
-package assignment09.Prob7b;
-
+package assignment09.prob8;
 
 public class Employee {
 	String firstName, lastName;
-	
-
 	int salary;
+	
 	public Employee(String f, String l, int s) {
 		this.firstName = f;
 		this.lastName = l;
@@ -21,8 +19,7 @@ public class Employee {
 		sb.append(lastName);
 		sb.append(" salary: ");
 		sb.append("" + salary+">");
-		return sb.toString();
-		
+		return sb.toString();		
 	}
 
 	public String getFirstName() {
@@ -36,6 +33,9 @@ public class Employee {
 	public String getLastName() {
 		return lastName;
 	}
+	public String getFullName(){
+		return getFirstName()+" "+getLastName();
+	}
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -48,10 +48,5 @@ public class Employee {
 	public void setSalary(int salary) {
 		this.salary = salary;
 	}
-	
-	public static String getfullName(Employee e) {
-		return e.getFirstName() + " " + e.getLastName() ;
-	}
-
 }
 

@@ -1,4 +1,4 @@
-package assignment09.Prob7b;
+package assignment09.prob7b;
 
 @FunctionalInterface
 public interface TriFunction<S, T, U, R> {
