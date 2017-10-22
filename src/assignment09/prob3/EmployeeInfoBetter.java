@@ -27,6 +27,7 @@ public class EmployeeInfoBetter {
 	public void sort(List<Employee> emps, final SortMethod method) {
 		
 		Collections.sort(emps, sortByHash.get(method));
+		System.out.println(emps);
 	}
 	
 	
